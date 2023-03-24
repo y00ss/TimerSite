@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "TikTak Site",
+  "version": "0.0.1",
+  "description": "Set a maximum time to use a specific site",
+
+  "permissions": [
+    "tabs",
+    "storage",
+    "<all_urls>",
+    "webRequest",
+    "notifications",
+    "webRequestBlocking",
+    "alarms",
+    "contextMenus"
+  ],
+  
+  "icons": {
+    "48": "icons/logo.png"
+  },
+
+  "homepage_url": "https://add0n.com/example",
+  "browser_action":{
+    "default_icon": {
+      "48": "icons/logo.png"
+  },
+    "default_title": "TikTak Site",
+    "default_popup": "data/popup/tiktaksite.html",
+    "browser_style": true
+},
+
+"background": {
+  "scripts": ["/data/background.js"]
+},
+
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "hello@titacsite.com"
+    }
+  }
+}
+
