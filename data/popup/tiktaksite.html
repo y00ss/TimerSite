@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="tiktaksite.css" />
+
+</head>
+
+<body>
+
+  <div id="popup-content">
+
+    <header class="panel-section panel-section-header">
+      <div class="icon-section-header"><img src="../../icons/logo_2.png" /></div>
+      <div class="text-section-header">TimerSite</div>
+    </header>
+
+    <div class="panel-section panel-section-formElements" id="tform" style="display: none;">
+
+      <div class="panel-list-item">
+        <div class="icon"></div>
+        <div class="text"><label><i id="domain-name"></i></label></div>
+        <div>
+          <label class="switch">
+            <input type="checkbox" id="twebsite" value="off">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="panel-section-separator"></div>
+
+
+      <div class="panel-list-item" id="settimer">
+
+        <div class="icon"></div>
+        <div class="text">Choose time for the timer (hh:mm): </div>
+        <div class="text"><input type="time" placeholder='hh:mm' id="timer" min="09:00" max="18:00" value="00:30"
+            required readonly /> </div>
+      </div>
+
+      <div class="panel-section-separator"></div>
+
+      <!-- COUNTER -->
+      <div class="panel-list-item  disabled">
+
+        <div class="icon"></div>
+        <div class="text">TEMPO RIMASTO : </div>
+        <div class="text"> </div>
+
+        <div class="icon"></div>
+        <div class="text"> hh:mm:ss</div>
+        <div class="text"> </div>
+
+      </div>
+
+
+      <div class="panel">
+        <div class="panel-section panel-section-footer">
+          <div class="panel-section-footer-button" id="btn-reset">Reset</div>
+          <div class="panel-section-footer-separator"></div>
+          <div class="panel-section-footer-button default" id="btn-confirm">Confirm</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="panel-list-item  disabled" id="tdefault" style="display: none;">
+
+      <div class="icon"></div>
+      <div class="text"><label>Sito non valido</label></div>
+      <div class="text"></div>
+    </div>
+
+
+  </div>
+
+
+
+
+  <script src="/data/popup/tiktaksite.js"></script>
+</body>
+
+</html>
